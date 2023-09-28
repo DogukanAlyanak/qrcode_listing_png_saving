@@ -32,7 +32,7 @@ async function saveQRFile(code) {
 
     await QRCode.toFile(folderPath + filename, code, {
         errorCorrectionLevel: 'H',
-        width: 512
+        width: 256
     }, function (err) {
         if (err) throw err;
     });
